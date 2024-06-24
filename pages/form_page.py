@@ -20,3 +20,6 @@ class FormPage(BasePage):
         self.current_address = WebElement(driver, '#currentAddress')
 
         self.user_form = WebElement(driver, '#userForm')
+
+        self.btn_state = WebElement(driver, '#state')
+        self.btn_NCR = WebElement(driver, "//*[contains(text(), 'NCR')]", 'xpath')

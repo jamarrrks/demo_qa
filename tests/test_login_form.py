@@ -21,3 +21,4 @@ def test_login_form(browser):
 
     assert form_page.modal_dialog.exist()
     form_page.btn_close_modal.click_force()
+
