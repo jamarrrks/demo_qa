@@ -9,7 +9,7 @@ class WebTables(BasePage):
         super().__init__(driver, self.base_url)
 
         self.no_data = WebElement(driver, 'div.rt-noData')
-        self.btn_delete_row = WebElement(driver, 'div.action-buttons > span#delete-record')
+        self.btn_delete_row = WebElement(driver, 'div.action-buttons > span.Delete')
 
         self.btn_add = WebElement(driver, '#addNewRecordButton')
         self.btn_submit = WebElement(driver, '#submit')
@@ -39,4 +39,11 @@ class WebTables(BasePage):
         self.btn_next = WebElement(driver, 'div.-next > button')
         self.total_pg_num = WebElement(driver, 'div.-center > span.-pageInfo > span')
         self.page_num = WebElement(driver, 'div.-center > span.-pageInfo > div > input[type=number]')
+
+        self.first_name_sort = WebElement(driver, 'div.rt-table > div.rt-thead.-header > div > div:nth-child(1)')
+        self.last_name_sort = WebElement(driver, 'div.rt-table > div.rt-thead.-header > div > div:nth-child(2)')
+        self.age_sort = WebElement(driver, 'div.rt-table > div.rt-thead.-header > div > div:nth-child(3)')
+        self.email_sort = WebElement(driver, 'div.rt-table > div.rt-thead.-header > div > div:nth-child(4)')
+        self.salary_sort = WebElement(driver, 'div.rt-table > div.rt-thead.-header > div > div:nth-child(5)')
+        self.department_sort = WebElement(driver, 'div.rt-table > div.rt-thead.-header > div > div:nth-child(6)')
 
